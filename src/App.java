@@ -138,8 +138,8 @@ public class App {
         if (dia1.equals(dia2) || numDia1 > numDia2) {
             System.out.println("Debes inroducir un dia posterior al anterior");
         }
-        int horaprimerdia = (numDia1 * 24) - hora1;
-        int horasegudodia = (numDia2 * 24) - hora2;
+        int horaprimerdia = (numDia1 * 24) + hora1;
+        int horasegudodia = (numDia2 * 24) + hora2;
         int horastranscuridad = horasegudodia - horaprimerdia;
 
         System.out.printf("Entre las %d:00h del %s y las %d:00h del %s hay %d horas/s", hora1, stringdia1, hora2,
