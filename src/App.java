@@ -119,6 +119,10 @@ public class App {
                     correctodia2 = false;
                 }
             }
+            if (dia1.equals(dia2) || numDia1 > numDia2) {
+                System.out.println("Debes inroducir un dia posterior al anterior");
+                correctodia2 = false;
+            }
 
         } while (!correctodia2);
 
@@ -135,9 +139,6 @@ public class App {
             }
         } while (!correctohora2);
 
-        if (dia1.equals(dia2) || numDia1 > numDia2) {
-            System.out.println("Debes inroducir un dia posterior al anterior");
-        }
         int horaprimerdia = (numDia1 * 24) + hora1;
         int horasegudodia = (numDia2 * 24) + hora2;
         int horastranscuridad = horasegudodia - horaprimerdia;
