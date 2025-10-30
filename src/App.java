@@ -139,8 +139,8 @@ public class App {
             }
         } while (!correctohora2);
 
-        int horaprimerdia = (numDia1 * 24) + hora1;
-        int horasegudodia = (numDia2 * 24) + hora2;
+        int horaprimerdia = ((numDia1 - 1) * 24) + hora1;
+        int horasegudodia = ((numDia2-1) * 24) + hora2;
         int horastranscuridad = horasegudodia - horaprimerdia;
 
         System.out.printf("Entre las %d:00h del %s y las %d:00h del %s hay %d horas/s", hora1, stringdia1, hora2,
