@@ -60,7 +60,7 @@ public class App {
 
         do {
             hora1 = Integer.parseInt(System.console().readLine("Hora: "));
-            if (hora1 >= 0 || hora1 <= 23)
+            if (hora1 >= 0 && hora1 <= 23)
                 correctohora1 = true;
             else {
                 correctohora1 = false;
@@ -127,7 +127,7 @@ public class App {
 
         do {
             hora2 = Integer.parseInt(System.console().readLine("Hora: "));
-            if (hora2 >= 0 || hora2 <= 23)
+            if (hora2 >= 0 && hora2 <= 23)
                 correctohora2 = true;
             else {
                 correctohora2 = false;
